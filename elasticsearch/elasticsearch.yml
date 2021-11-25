@@ -1,0 +1,4 @@
+cluster.name: "docker-cluster"
+network.host: 0.0.0.0
+indices.recovery.max_bytes_per_sec: 200mb
+http.max_content_length: 10240mb
