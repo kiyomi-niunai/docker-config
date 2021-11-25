@@ -1,0 +1,16 @@
+setup.ilm.enabled: false
+setup.template.name: "filebeat-161"
+setup.template.pattern: "filebeat-161-*"
+
+setup.template.settings:
+  index.number_of_shards: 5
+  index.number_of_replicas: 0
+  index.codec: best_compression
+
+filebeat.inputs:
+  - type: log				##文本日志
+    paths:
+      - /usr/share/filebeat/logs/test.log     ##日志文件修改权限到666
+output:
+  logstash:  			#输出到elasticsearch，也可以输出到logstash
+    hosts: ["127.0.0.1:5044"] 	#elasticsearch地址,
