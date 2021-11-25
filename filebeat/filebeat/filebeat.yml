@@ -2,7 +2,7 @@ filebeat.inputs:
   - type: log
     enable: true
     paths:
-      - /usr/share/filebeat/*.log
+      - /var/log/filebeat/*.log
     scan_frequency: 10s
 #    tail_files: false
 #    ignore_older: 60m
