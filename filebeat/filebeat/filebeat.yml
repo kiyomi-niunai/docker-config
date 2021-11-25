@@ -20,7 +20,7 @@ processors:
 
 output:
   logstash:
-    hosts: ["172.29.0.4:5044"]
+    hosts: ["172.30.0.3:5044"]
 #output.file:
 #  path: "/tmp"
 #  filename: "filebeat.log"
